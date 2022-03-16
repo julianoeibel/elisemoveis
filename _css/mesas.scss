@@ -1,0 +1,52 @@
+﻿@charset "UTF-8";
+@import 'style';
+
+/*--------------------MESAS----------------------*/
+%mesas {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 40px;
+    img {
+        position: absolute;
+        width: 20%;
+        left: 30px;
+        bottom: 30px;
+    }
+}
+
+@mixin shadow {
+    -webkit-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+}
+
+/*--------------------iron----------------------*/
+.mesa-iron {
+    @extend %mesas;
+    background: url(../_img/mesa-iron.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------niva----------------------*/
+
+.mesa-niva {
+    @extend %mesas;
+    background: url(../_img/mesa-niva.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------lumen----------------------*/
+
+.mesa-lumen {
+    @extend %mesas;
+    background: url(../_img/mesa-lumen.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;   
+}

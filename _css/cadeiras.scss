@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import 'style';
+
+/*--------------------CADEIRAs----------------------*/
+%cadeiras {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 40px;
+    img {
+        position: absolute;
+        width: 20%;
+        left: 30px;
+        bottom: 30px;
+    }
+}
+
+@mixin shadow {
+    -webkit-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+}
+
+/*--------------------CONTI----------------------*/
+.conti {
+    @extend %cadeiras;
+    background: url(../_img/conti.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------SPIN----------------------*/
+
+.spin {
+    @extend %cadeiras;
+    background: url(../_img/spin.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------MIMO MAT----------------------*/
+
+.mimo-mat {
+    @extend %cadeiras;
+    background: url(../_img/POL-MIMO-DET.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;   
+}

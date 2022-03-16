@@ -1,0 +1,52 @@
+﻿@charset "UTF-8";
+@import 'style';
+
+/*--------------------CADEIRAs----------------------*/
+%poltronas {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 40px;
+    img {
+        position: absolute;
+        width: 20%;
+        left: 30px;
+        bottom: 30px;
+    }
+}
+
+@mixin shadow {
+    -webkit-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+}
+
+/*--------------------CONTI----------------------*/
+.mimo {
+    @extend %poltronas;
+    background: url(../_img/Pol-Mimo.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------SPIN----------------------*/
+
+.zarem {
+    @extend %poltronas;
+    background: url(../_img/Pol-Zarem.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------MIMO MAT----------------------*/
+
+.way {
+    @extend %poltronas;
+    background: url(../_img/Pol-Way.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;   
+}

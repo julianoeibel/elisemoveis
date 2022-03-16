@@ -1,0 +1,72 @@
+﻿@charset "UTF-8";
+@import 'style';
+
+/*--------------------Banquetas----------------------*/
+%banquetas {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 40px;
+    img {
+        position: absolute;
+        width: 20%;
+        left: 30px;
+        bottom: 30px;
+    }
+}
+
+@mixin shadow {
+    -webkit-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+}
+
+/*--------------------BQ COMPASS----------------------*/
+.bq-compass {
+    @extend %banquetas;
+    background: url(../_img/bq-compass.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------BQ COMPASS2----------------------*/
+
+.bq-compass2 {
+    @extend %banquetas;
+    background: url(../_img/bq-compass2.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------ELIS----------------------*/
+
+.bq-elis {
+    @extend %banquetas;
+    background: url(../_img/bq-elis.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;   
+}
+
+/*--------------------BANCO LOGOS----------------------*/
+
+.banco-logos {
+    @extend %banquetas;
+    background: url(../_img/banco-logos.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;   
+}
+
+/*--------------------BANCO DROP----------------------*/
+
+.banco-drop {
+    @extend %banquetas;
+    background: url(../_img/banco-drop.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;   
+}

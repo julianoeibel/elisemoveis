@@ -1,0 +1,52 @@
+﻿@charset "UTF-8";
+@import 'style';
+
+/*--------------------Mesa Apoio----------------------*/
+%mesaapoio {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 40px;
+    img {
+        position: absolute;
+        width: 20%;
+        left: 30px;
+        bottom: 30px;
+    }
+}
+
+@mixin shadow {
+    -webkit-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+    box-shadow: inset 2px 200px 300px -27px rgba(0,0,0,0.6);
+}
+
+/*--------------------Tula----------------------*/
+.Mesinha-Tula {
+    @extend %mesaapoio;
+    background: url(../_img/Mesinha-Tula.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------Duchan----------------------*/
+
+.Mesinha-Duchan {
+    @extend %mesaapoio;
+    background: url(../_img/Mesinha-Duchan.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;
+}
+
+/*--------------------Three----------------------*/
+
+.Mesinha-Three {
+    @extend %mesaapoio;
+    background: url(../_img/Mesinha-Three.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include shadow;   
+}
